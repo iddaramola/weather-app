@@ -10,6 +10,7 @@ const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
 
   const loadOptionsFromGeoDB = (inputValue) => {
+      console.log(inputValue)
         return fetch(
             `${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`,
             geoApiOptions
@@ -21,7 +22,6 @@ const Search = ({ onSearchChange }) => {
                 //once the response comes back,we then use the response to get the shape of data AsyncPaginate needs, which is an object with 'options' key that maps to array of objects with keys, 'value' and 'label'
                 return {
                     options: response.data.map((city)=> {
-                        
                         return {
                             value: `${city.latitude} ${city.longitude}`,
                             label: `${city.name}, ${city.countryCode}`,

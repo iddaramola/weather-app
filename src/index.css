@@ -1,12 +1,85 @@
-body {
-  margin: 0;
-  font-family: "Roboto", Arial !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #d5d4d4
+/* Mobile-first CSS Reset */
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+* {
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Reset margins and paddings */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font size and family */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Basic link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive images */
+img,
+video {
+  display: block;
+}
+
+/* Responsive embeds */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* Clear floating elements */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Mobile-first media query */
+@media (min-width: 768px) {
 }
