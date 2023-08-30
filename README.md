@@ -27,3 +27,5 @@ once the local server is on, you can access the app at
 `localhost:3000`,
 
 and check weather information of cities around the world.
+
+Please do note that you may get some deprecation warnings while server is starting up, just ignore them and wait for server come up. You will eventually get a message telling you which port to view the app on, and the last message on the command line would be *webpack compiled successfully*.
