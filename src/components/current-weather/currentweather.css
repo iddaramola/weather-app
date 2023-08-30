@@ -8,6 +8,7 @@
 
 .current-weather-card {
   border: 1px solid #398ce4;
+  border-radius: 7px;
   margin: 15px;
   padding: 15px;
   background-color: #cbc9d1;
