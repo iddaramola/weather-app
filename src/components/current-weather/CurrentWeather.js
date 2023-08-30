@@ -16,7 +16,7 @@ let date =`${day}, ${month} ${number_of_month}`;
   return (
     <>
       <div className="current-weather-card">
-        
+         <h2 className="today">Today</h2>
         <div className="inner-container">
           <div className="left-column">
             <span className="city">
