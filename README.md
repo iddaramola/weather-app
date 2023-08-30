@@ -14,12 +14,16 @@ To get started using this app, you first need to download it to your system by r
 
 `cd weather-app`
 
-or, whatever you name the directory while cloning it. Then start the local server by running
+or, whatever you name the directory while cloning it. You need to first of all install the app's dependencies by running 
 
-`npm start`
+`npm install`
 
-,once the local server is on, you can access the app at
+Then start the local server by running
 
-`localhost:3000`
+`npm start`,
 
-,and check weather information of cities around the world.
+once the local server is on, you can access the app at
+
+`localhost:3000`,
+
+and check weather information of cities around the world.
